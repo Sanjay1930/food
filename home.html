@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap.min.css"  type="text/css">
+    <script src="bootstrap.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+            <div class="container-fluid">
+              <a class="navbar-brand" style="position:relative;left:150px" href="#">
+                <img src="download.png" alt="" width="30" height="24" style="position: relative;">
+                TAKEAWAY</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#takeaway" aria-controls="takeaway" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="position:relative;left:890px">
+                <button class="btn btn-outline-success" type="submit" style="position:relative;left:890px">Search</button>
+              </form>
+              <div class="collapse navbar-collapse" id="takeaway">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+                  <li class="nav-item" style="position:relative;left:970px">
+                    <a class="nav-link" aria-current="page" href="#ex" data-bs-toggle="modal">SIGNUP</a>
+                  </li>
+                  <li class="nav-item" style="position:relative;left:830px">
+                    <a class="nav-link" href="#ex2" data-bs-toggle="modal">LOGIN</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div id="take" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="takeawayphoto.png"  class="d-inline-block w-100"  style="height:650px;"alt="first image">
+              </div>              
+              <div class="carousel-item ">
+                <img src="food.png"  class="d-inline-block w-100" style="height:650px;" alt="first image">
+              </div>
+              <div class="carousel-item">
+                <img src="food2.png"  class="d-inline-block w-100"  style="height:650px;"alt="first image">
+              </div>
+              <div class="carousel-item">
+                <img src="foodoffers3.png"  class="d-inline-block w-100" style="height:650px;" alt="first image">
+              </div>
+              <div class="carousel-item">
+                <img src="foodoffers2.png" class="d-inline-block w-100" style="height:650px;" alt="first image">
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#take" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#take" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </button>
+            </button> 
+          </div>
+        </div> 
+    <center>
+        <h1 style="padding-top:50px"> 
+          <b>Categories</b>
+        </h1>
+      </center> 
+      <div class="row"  style="margin:100px;display:flex;justify-content: space-around;">
+        <div class="city-card-container col-md">
+          <a style="padding:20px" href="veg.html">
+            <div class="city-card rounded-circle sanj">
+              <img src="veglogo.png" alt="food-img" style="padding:20px" height="300px" width="300px">
+            </div>
+          </a>
+        </div>
+        <div class="city-card-container col-md">
+          <a style="padding:20px" href="non-veg.html">
+            <div class="city-card rounded-circle sanj">
+              <img src="nonveglogo.png" alt="food-img" style="padding:20px" height="300px" width="300px">
+            </div>
+          </a>
+        </div>
+        <div class="city-card-container col-md">
+          <a style="padding:20px" href="desserts.html">
+            <div class="city-card rounded-circle sanj">
+              <img src="dessertslogo.png" alt="food-img" style="padding:20px" height="300px" width="300px">
+            </div>
+          </a>
+        </div>
+        <div class="city-card-container col-md">
+          <a style="padding:20px" href="juice.html">
+            <div class="city-card rounded-circle sanj">
+              <img src="juicelogo.png" alt="food-img" style="padding:20px" height="300px" width="300px">
+            </div>
+          </a>
+        </div>
+    </div>
+    <div class="d">
+
+    </div>
+    <div class="modal fade" id="ex" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">SignUp Page </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container mt-5">
+              <div class="row">
+                  <div class="cl-sm-12">
+                      <div class="card">
+                          <div class="card-body">
+                              <form action="/" method="POST">
+                                  <div class="form-group">
+                                      <label for="name">Full name</label>
+                                      <input type="text" class="form-control" placeholder="Enter your full name" id="name" class="form-control" required>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <div class="form-group">
+                                              <label for="mobile no.">Mobile.no</label>
+                                              <input type="number" name="mobile" id="mobile" placeholder="+917010782356" aria-describedby="phonehelp" class="form-control" required>
+                                              <small id="phonehelp" class="form-text text-muted"> Don't share your number</small>
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <div class="form-group">
+                                              <label for="email">Email</label>
+                                              <input type="email" name="email" id="email" class="form-control" placeholder="takeaway@gmail.com" aria-describedby="emailhelp" required>
+                                              <small id="emailhelp" class="form-text text-muted"> Don't share your email</small>                         
+                                          </div> 
+                                          
+                                      </div>
+                                  </div>
+      
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <div class="form-group">
+                                              <label for="password">Password</label>
+                                              <input type="password" name="password" id="password" placeholder="password"  class="form-control" required>
+                                              
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <div class="form-group">
+                                              <label for="confirm_password">Confirm paassword</label>
+                                              <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="confirm_password" required>
+                                                                       
+                                          </div> 
+                                          
+                                      </div>
+                                  </div>
+      
+                                  <div class="form-group text-center">
+                                      <div class="form-check">
+                                          <input type="checkbox" class="form-text-input" id="signup" required value="signup">
+                                          <label for="signup" class="form-check-label"> I agree to terms and conditions  
+                                          </label>
+                                      </div>
+                                  </div>     
+
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="ex2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login Page</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           
+
+            <div class="modal-body">
+              <div class="container mt-5">
+                  <div class="row">
+                      <div class="cl-sm-12">
+                          <div class="card">
+                              <div class="card-body">
+                                  <form action="" method="POST">
+                                      <div class="form-group">
+                                          <label for="name" style="width:100%" >USER NAME:</label>
+                                          <input type="text" class="form-control" id="name" placeholder="takeaway" required>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="password">Password</label>
+                                          <input type="password" name="password" id="password" placeholder="password"  class="form-control" required>
+                                          
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+            <button type="button" class="btn btn-primary">login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+</body>
+</html>
+
